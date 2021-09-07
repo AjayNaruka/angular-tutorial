@@ -14,6 +14,7 @@ import { TitlecaseComponent } from './titlecase/titlecase.component';
 import { TitlecasePipe } from './titlecase.pipe';
 import { PanelComponent } from './panel/panel.component';
 import { LikeComponent } from './like/like.component';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LikeComponent } from './like/like.component';
     TitlecaseComponent,
     TitlecasePipe,
     PanelComponent,
-    LikeComponent
+    LikeComponent,
+    ZippyComponent
   ],
   imports: [
     BrowserModule,

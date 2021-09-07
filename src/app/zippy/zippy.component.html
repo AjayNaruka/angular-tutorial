@@ -1,0 +1,10 @@
+
+
+<div class="card card-default">
+  <div class="card-header" (click)="isOpen = !isOpen">
+    {{title}}
+  </div>
+  <div *ngIf="isOpen" class="card-body">
+    <ng-content></ng-content> <!-- TAKES THE CONTENT BETWEEN TAGS DURING CREATION -->
+  </div>
+</div>

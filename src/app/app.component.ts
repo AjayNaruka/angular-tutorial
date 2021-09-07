@@ -19,4 +19,31 @@ export class AppComponent {
   onFavChange(args: any){
     console.log('changed: ',args.newValue);
   }
+
+  courses = [5];
+
+  /* SWITCH */
+
+  viewMode ='map';
+
+  /* / SWITCH */
+
+  /* NGFOR */
+
+  courses2 = [
+    {
+      id:1,
+      name:'c1'
+    },
+    {
+      id:2,
+      name:'c2'
+    },
+    {
+      id:3,
+      name:'c3'
+    },
+  ]
+
+  /* / NGFOR */
 }

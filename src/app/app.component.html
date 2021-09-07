@@ -10,4 +10,62 @@
 </bootstrap-panel>
  -->
 
- <app-like [totalLikes]="tweet.numberOfLikes" [isLiked]="tweet.isLiked" ></app-like>
+ <!-- <app-like [totalLikes]="tweet.numberOfLikes" [isLiked]="tweet.isLiked" ></app-like> -->
+
+ <!-- NGIF -->
+ <!-- <div>
+  <div *ngIf="courses.length > 0; then coursesList else noCourses"></div>
+
+  <ng-template #coursesList>
+    List of courses:
+  </ng-template>
+ 
+  <ng-template #noCourses>
+    No courses yet
+  </ng-template>
+ </div> -->
+
+ <!-- / NGIF -->
+
+ <!-- NGSWITCH -->
+
+ <!-- <ul class="nav nav-pills">
+   <li class="nav-item">
+     <a (click) ="viewMode='map'" class="nav-link" [class.active]="viewMode=='map'" href="#">Map View</a>
+  </li>
+  <li class="nav-item">
+    <a (click) ="viewMode='list'" class="nav-link" [class.active]="viewMode=='list'" href="#">List View</a>
+ </li>
+   
+ </ul>
+
+ <div [ngSwitch]="viewMode">
+   <div *ngSwitchCase=" 'map' " >MAP VIEW CONTENT</div>
+   <div *ngSwitchCase=" 'list' ">LIST VIEW CONTENT</div>
+   <div *ngSwitchDefault>OTHERWISe</div>
+ </div> -->
+
+ <!-- / NGSWITCH -->
+
+ <!-- NGFOR -->
+
+<!-- <ul>
+  <li *ngFor="let course of courses2; index as i">
+    {{course.name + '-'+ i}}
+  </li>
+</ul> -->
+
+ <!-- / NGFOR -->
+
+
+ <!-- ZIPPY -->
+
+<zippy title="Shipping Details">
+    Shipping Details Content
+</zippy>
+<zippy title="Billing Details">
+  Billing Details Content
+</zippy>
+
+ <!-- / ZIPPY -->
+ 
