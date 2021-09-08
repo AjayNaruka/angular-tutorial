@@ -1,0 +1,30 @@
+<form [formGroup]="form" (ngSubmit)="login()">
+    <div *ngIf="form.errors" class="alert alert-danger">
+        Invalid login
+    </div>
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input 
+            formControlName="username"
+            id="username" 
+            type="text" 
+            class="form-control">
+            <div *ngIf="username.pending">
+                Checking...
+            </div>
+            <div *ngIf="username.touched && form.get('username').invalid" class="mt-2 alert alert-danger">
+                <div *ngIf="username.errors.required"> Username is REQUIRED </div>
+                <div *ngIf="username.errors.noSpace"> Username can't have SPACE </div>
+                <div *ngIf="username.errors.unique"> Username can't be fapuasn </div>
+            </div>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input 
+            formControlName="password"
+            id="password" 
+            type="text" 
+            class="form-control">
+    </div>
+    <button class="mt-2 btn btn-primary" type="submit">Sign Up</button>
+</form>
